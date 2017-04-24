@@ -9,6 +9,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div>
+      <%= render "container-fluid"%>
+      <%= yield %>
+   </div>
+   <%= render "cmmon/footer" %>
   </body>
 </html>
