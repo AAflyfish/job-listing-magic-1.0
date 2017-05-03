@@ -14,3 +14,14 @@ u.password_confirmation = "123456"   # 最少要六码
 
 u.is_admin = true
 u.save
+
+create_user = for i in 1..10 do
+  User.create!([
+    email: "#{i}@#{i}.com",
+    password: "111111",
+    password_confirmation: "111111",
+    is_admin: true
+                ])
+end
+
+puts "10 User created."
